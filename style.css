@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.app {
+    border: 1px solid #555;
+    margin: 50px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.heading {
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.header-btn {
+    margin-right: 50px;
+}
+.header-btn button {
+    background-color: #FF4761;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.header-btn button:hover {
+    background-color: #ccffff;
+    color: #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr  {
+    padding-right: 20px;
+}
+th, td, tr {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.table-heading {
+    padding: 20px 0;
+}
+tr:nth-child(even) {
+    /* background-color: #ccc; */
+}
+.text-invoice {
+    color: #1CA0F2;
+}
+.text-categories p {
+    background-color: #fff;
+    border: 1px solid #FF4761;
+    color: #FF4761;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.text-customer {
+    line-height: 30.5px;
+    
+}
+.text-customer-item {
+    display: flex;
+    /* flex-direction: row; */
+}
+.text-customer img {
+    height: 30.5px;
+    border-radius: 50%;
+}
+.text-customer p {
+    width: 100%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.text-products {
+    width: calc(100%/7);
+    text-align: center;
+}
+.text-products-item {
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    padding: 2px;
+    /* flex-direction: row; */
+    /* margin-left: 10px; */
+}
+.text-products img {
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    padding: 2px;
+}
+.text-shipping {
+
+}
+.text-shipping-item {
+    width: 80%; 
+    border: 1px solid #aaa;
+    background-image: linear-gradient(to right, #FF4761 30%, #ccc 20%);
+    height: 10px;
+    border-radius: 10px;
+}
+.shipping-red {
+    background-image: linear-gradient(to right, #FF4761 30%, #ccc 20%);
+}
+.shipping-orange {
+    background-image: linear-gradient(to right, orange 50%, #ccc 20%);
+}
+.shipping-green {
+    background-image: linear-gradient(to right, green 70%, #ccc 20%);
+}
+.text-orange p {
+    color: orange;
+    border: 1px solid orange;
+}
+.text-green p {
+    color: green;
+    border: 1px solid green;
+}
