@@ -39,86 +39,115 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid black;
 }
 tr  {
     padding-right: 20px;
-}
-th, td, tr {
-    text-align: left;
     border-bottom: 1px solid #ddd;
+}
+
+td, th {
+    padding: 20px 0;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+tr {
+    width: auto;
+    text-align: left;
     padding: 20px 0;
 }
 .table-heading {
-    padding: 20px 0;
+    /* padding-left: 20px; */
 }
 tr:nth-child(even) {
     /* background-color: #ccc; */
+}
+.text-status {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ line-height: 36px;
+}
+.item-status {
+    font-size: 30px;
+    text-align: center;
+    padding-right: 15px;
+}
+.item-status-red {
+    color: red;
+}
+.item-status-green {
+    color: green;
+}
+.item-status-orange {
+    color: orange;
+}
+
+.item-text {
+    color: red;
 }
 .text-invoice {
     color: #1CA0F2;
 }
 .text-categories p {
-    background-color: #fff;
-    border: 1px solid #FF4761;
-    color: #FF4761;
     border-radius: 30px;
     display: inline-block;
     padding: 5px 10px;
 }
 .text-customer {
     line-height: 30.5px;
-    
+    display: flex;
 }
 .text-customer-item {
-    display: flex;
-    /* flex-direction: row; */
+   
 }
 .text-customer img {
     height: 30.5px;
     border-radius: 50%;
 }
 .text-customer p {
-    width: 100%;
+    /* width: 100%; */
     display: inline-block;
     padding-left: 5px;
 }
 
 .text-products {
-    width: calc(100%/7);
-    text-align: center;
+    
 }
 .text-products-item {
     background-color: #fff;
-    width: 80%;
+    width: auto;
     display: flex;
-    padding: 2px;
-    /* flex-direction: row; */
-    /* margin-left: 10px; */
+    flex-direction: row;
+    
 }
 .text-products img {
-    width: 100%;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-color: #fff;
-    padding: 2px;
+    padding: 3px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 .text-shipping {
 
 }
 .text-shipping-item {
-    width: 80%; 
-    border: 1px solid #aaa;
-    background-image: linear-gradient(to right, #FF4761 30%, #ccc 20%);
+    background-image: linear-gradient(to right, #FF4761 30%, #EFEBEC 10%);
     height: 10px;
     border-radius: 10px;
 }
 .shipping-red {
-    background-image: linear-gradient(to right, #FF4761 30%, #ccc 20%);
+    background-image: linear-gradient(to right, #FF4761 30%, #EFEBEC 10%);
 }
 .shipping-orange {
-    background-image: linear-gradient(to right, orange 50%, #ccc 20%);
+    background-image: linear-gradient(to right, orange 50%, #EFEBEC 10%);
 }
 .shipping-green {
-    background-image: linear-gradient(to right, green 70%, #ccc 20%);
+    background-image: linear-gradient(to right, green 70%, #EFEBEC 10%);
+}
+.text-red p {
+    color: red;
+    border: 1px solid red;
 }
 .text-orange p {
     color: orange;
@@ -127,4 +156,7 @@ tr:nth-child(even) {
 .text-green p {
     color: green;
     border: 1px solid green;
+}
+.text-shipping {
+    width: 15%;
 }
